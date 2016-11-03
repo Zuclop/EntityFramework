@@ -9,6 +9,7 @@ namespace WebApplicationEntityFramework.Models
     {
         public ProductType()
         {
+            Products = new List<Product>();
         }
         public int ProductTypeID { get; set; }
         public string Name { get; set; }

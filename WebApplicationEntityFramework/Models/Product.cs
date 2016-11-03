@@ -14,9 +14,9 @@ namespace WebApplicationEntityFramework.Models
         public int ProductID { get; set; }
         public string Name { get; set; }
 
-        [NotMapped]
         public int ProductTypeId { get; set; }
 
+        [ForeignKey("ProductTypeId")]
         public ProductType ProductType { get; set; }
     }
 }
